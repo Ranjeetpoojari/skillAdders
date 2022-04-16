@@ -27,13 +27,25 @@ function disablebtn(){
        }
     }
     
-        var d =document.querySelector("dropdown")
-      var f = window.screen.width("990px");
-        if(f)
-        {
-            alert("Hellow world")
-        }
-        else{
-            alert("size is not match")
-        }
-    
+    var d =document.querySelector(".dropdown-remove")
+    var f = window.innerWidth;
+      if(f >= 990)
+      {
+          d.classList.add('d-none');
+          window.onresize =()=>{
+              document.location.reload(true);
+          }
+      }
+      else if(f <= 991){
+          d.classList.remove('d-none');
+          window.onresize =()=>{
+              document.location.reload(true);
+          }
+      }
+      else{
+          d.classList.remove('d-none');
+          window.onresize =()=>{
+              document.location.reload(true);
+          }       
+      }
+  
