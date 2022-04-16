@@ -474,9 +474,9 @@ section {
   color: #9eccf4;
 }
 .carousel-caption h3{
-  color:blue;
-  font-weight: 700;
-  font-size: 200%;
+  color:rgb(118, 205, 174);
+  font-weight:bolder ;
+  font-size: 300%;
   position: absolute;
   opacity: 0;
   top: -250%;
@@ -520,7 +520,7 @@ top:-250%;
   justify-content: center;
   opacity: 1;
 }
-.brightness { filter: brightness(0.65); }
+.brightness { filter: brightness(0.58); }
 .carousel-caption p{
   color:white;
   font-weight: 800;
@@ -534,9 +534,9 @@ top:-250%;
 }
 @media only screen and (min-width:280px) and (max-width:450px){
     .carousel-caption h3{
-      color:rgb(12, 8, 249);
+      color:rgb(118, 205, 174);
       font-weight: 700;
-      font-size: 100%;
+      font-size: 160%;
       position: absolute;
       opacity: 0;
       top: auto;
@@ -550,16 +550,16 @@ top:-250%;
   }
   @media only screen and (min-width:451px) and (max-width:912px){
     .carousel-caption h3{
-      color:rgb(52, 52, 254);
+      color:rgb(118, 205, 174);
       font-weight: 700;
-      font-size: 150%;
+      font-size: 170%;
       position: absolute;
       opacity: 0;
       top:auto;
       animation: ran1 2s ease-in 1s 1 forwards;
     }
     .carousel-caption p{
-      color:rgb(4, 4, 30);
+      color:rgb(236, 236, 241);
       font-weight: 800;
       font-size: 20px;
       animation: ran1 2s ease-in 1s 1 forwards;  
@@ -625,7 +625,7 @@ top:-250%;
 }
 .contact{
   background:linear-gradient(45deg,rgba(19, 189, 132, 0.9),rgba(18, 224, 163, 0.7));
-  height:500px;
+  height:33rem;
   border-radius: 5px;
 }
 form{
@@ -645,7 +645,7 @@ form{
 .blue{
   background-color: #1c5c93;
   color:white;
- margin-left: 80%;
+ margin-left: 65%;
 }
 .contact p{
   color:white;
@@ -668,6 +668,10 @@ hr {
   border: 0;
   opacity: .25;
 }
+.car{
+  max-width: 300px;
+  margin: auto;
+}
 .car .card-tittle{
   font-weight: bolder;
   font-size: 17px;
@@ -682,4 +686,49 @@ width: 150px;
   display: flex;
 align-items: flex-end;
 margin: 0px; 
+}
+.mega-menu{
+  height:auto;
+  max-width: 50%;
+  z-index:99;
+  background-color: #fff;
+  position: fixed;
+  /* position:absolute; */
+  left: 30%;
+  margin: 2%;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid black;
+}
+.mega-menu ul{
+  display:flex;
+  flex-direction:row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.mega-menu ul li a{
+ width: 200px;
+  margin-left: 10px;
+  white-space: normal;
+}
+#program a:hover~.mega-menu{
+  display:none;
+}
+.d-hidden{
+  display: none;
+}
+@media only screen and (max-width:990px) {
+  .mega-menu{
+    height:auto;
+    max-width: 50%;
+    z-index:99;
+    background-color: #fff;
+    position:absolute;
+    left: 30%;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    display:none;
+  }
 }
