@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: #fff;
   z-index: 997;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
 }
 #header .logo h1 {
   font-size: 28px;
@@ -170,7 +171,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-right: 3px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  background:linear-gradient(45deg,rgba(19, 189, 132, 0.9),rgba(18, 224, 163, 0.7));
+  background:#0E88D3;
   color: white;
   border-radius: 5px;
 }
@@ -199,7 +200,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #428bca;
+  color: #feffff;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -277,13 +278,19 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a, .navbar-mobile a:hover {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1f3548;
+  color: rgb(12, 11, 11);
 }
+.navbar-mobile a:hover {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: rgb(255, 242, 242);
+}
+
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #428bca;
+  color: #f9fafb;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -309,7 +316,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #428bca;
+  color: white;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -320,7 +327,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 0px 0;
   overflow: hidden;
 }
 
@@ -342,7 +349,9 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
+.num{
+  display: block;
+}
 
 #footer {
   background: #587187;
@@ -474,7 +483,7 @@ section {
   color: #9eccf4;
 }
 .carousel-caption h3{
-  color:rgb(118, 205, 174);
+  color:#0E88D3;
   font-weight:bolder ;
   font-size: 300%;
   position: absolute;
@@ -489,9 +498,10 @@ section {
   animation: ran1 2s ease-in 1s 1 forwards;
 }
 #con{
-  width: 100%;
+  width: 100vw;
   height: 50%;
   box-sizing: border-box;
+  margin-top: 0px;
 }
 @keyframes ran1 {
   0%{
@@ -515,8 +525,8 @@ top:-250%;
   width: 100%;
 }
 .carousel-inner .carousel-item img{
-  max-height: 10%;
-  max-width: 100%;
+  max-height: 500px;
+  max-width: 100vw;
   justify-content: center;
   opacity: 1;
 }
@@ -534,7 +544,7 @@ top:-250%;
 }
 @media only screen and (min-width:280px) and (max-width:450px){
     .carousel-caption h3{
-      color:rgb(118, 205, 174);
+      color:#0E88D3;
       font-weight: 700;
       font-size: 160%;
       position: absolute;
@@ -546,6 +556,10 @@ top:-250%;
       height:30vh;
      width: 100%;
     
+    }
+    .num{
+      /* display: none; */
+      font-size: 10px;
     }
   }
   @media only screen and (min-width:451px) and (max-width:912px){
@@ -590,7 +604,8 @@ top:-250%;
     font-weight: bolder;
   }
   .green{
-    background:linear-gradient(45deg,rgba(19, 189, 132, 0.9),rgba(18, 224, 163, 0.7));
+    background:#0E88D3;
+    color: white;
   }
   .car img{
     height: 190px;
@@ -624,7 +639,7 @@ top:-250%;
   margin: auto;
 }
 .contact{
-  background:linear-gradient(45deg,rgba(19, 189, 132, 0.9),rgba(18, 224, 163, 0.7));
+  background:#F47216;
   height:33rem;
   border-radius: 5px;
 }
@@ -633,6 +648,7 @@ form{
 }
 .form input{
   height:40px;
+  border:0.1px solid black;
 }
 .form input,textarea{
   width: 100%;
@@ -651,7 +667,7 @@ form{
   color:white;
 }
 .navbar  ul li a:hover li{
-  background:linear-gradient(45deg,rgba(19, 189, 132, 0.9),rgba(18, 224, 163, 0.7));
+  background:#0E88D3;
   color:white;
   margin-left: 3px;
   margin-right: 3px;
@@ -692,13 +708,13 @@ margin: 0px;
   max-width: 50%;
   z-index:99;
   background-color: #fff;
-  position: fixed;
+  position:fixed;
   /* position:absolute; */
   left: 30%;
-  margin: 2%;
+  margin-top: 24%;
   border-radius: 10px;
   padding: 15px;
-  border: 1px solid black;
+
 }
 .mega-menu ul{
   display:flex;
@@ -723,7 +739,7 @@ margin: 0px;
     max-width: 50%;
     z-index:99;
     background-color: #fff;
-    position:absolute;
+    position:fixed;
     left: 30%;
     margin: 2%;
     border-radius: 10px;
